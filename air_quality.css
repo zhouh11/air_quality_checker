@@ -1,8 +1,12 @@
 
-.search{
-    align-items: center;
-    
+.search {
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    width: 50%;
+    height: 70vh; 
 }
+
 .search input{
     /* border:0; */
     outline:0;
@@ -14,10 +18,22 @@
     flex:1;
     margin-right : 16px;
     font-size: 18px;
+    
  
 }
 
-.card{
+.AirQuality{
+    width:90%;
+    max-width: 470px;
+    background: linear-gradient(0deg, rgba(87,255,236,1) 0%, rgba(152,218,255,1) 100%);
+    color: navy;
+    margin: 100px auto 0;
+    border-radius: 20px;
+    padding: 40px 35px;
+    text-align: center;
+}
+
+.MainPollutant{
     width:90%;
     max-width: 470px;
     background: linear-gradient(0deg, rgba(87,255,236,1) 0%, rgba(152,218,255,1) 100%);
