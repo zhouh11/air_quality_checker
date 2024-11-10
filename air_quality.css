@@ -1,4 +1,19 @@
 
+
+*{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    box-sizing: border-box;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+
+.State{
+    text-align: center;
+    font-size: 50px;
+    color: rgb(29, 2, 104);
+}
 .search {
     display: flex;
     justify-content: center;
@@ -6,9 +21,9 @@
     width: 50%;
     height: 70vh; 
     margin: 0 auto;
-    position: absolute;
+    position: relative;
     top: 40px; 
-    right: 200px;
+    left: 40px;
 }
 
 .search input{
@@ -28,10 +43,30 @@
  
 }
 
+.search_btn {
+    border: 0;
+    outline: 0;
+    background: #ebfffc;
+    border-radius: 50%;
+    width: 60px; 
+    height: 60px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.fa-magnifying-glass {
+    font-size: 36px; 
+}
+
+
+
 .AirQuality{
     width:90%;
     max-width: 470px;
-    background: linear-gradient(0deg, rgba(87,255,236,1) 0%, rgba(152,218,255,1) 100%);
+    background: rgba(255, 255, 255, 0.2); 
+    backdrop-filter: blur(10px);
     color: navy;
     margin: 100px auto 0;
     border-radius: 20px;
@@ -42,12 +77,26 @@
 .MainPollutant{
     width:90%;
     max-width: 470px;
-    background: linear-gradient(0deg, rgba(87,255,236,1) 0%, rgba(152,218,255,1) 100%);
+    background: rgba(255, 255, 255, 0.2); 
+    backdrop-filter: blur(10px);
     color: navy;
     margin: 100px auto 0;
     border-radius: 20px;
     padding: 40px 35px;
     text-align: center;
+}
+
+.card{
+    background-image: url("./skyscape.jpg");
+
+    width:90%;
+    max-width: 470px;
+   
+    margin: 100px auto 0;
+    padding: 40px 35px;
+    text-align: center;
+    background-size: cover;
+    background-position: center;
 }
 
 .col{
@@ -68,8 +117,53 @@
 }
 
 
-#cities {
+
+
+#city_btn{
+    font-family: Arial, Helvetica, sans-serif;
+    text-transform: uppercase;
+    height: 30px;
+    width: 150px;
+    font-size: 12px;
+    font-weight: 600;
+    color: navy;
+    cursor: pointer;
+    border: none;
+    background-size: 300% 100%;
+    border-radius: 30px;
+    background-color: aliceblue;
+    
+}
+#city_btn:hover{
+    background-color: navy;
+    color: aliceblue;
+
+}
+
+
+
+.city_list {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: 60%; 
+    left: 50%;
+    transform: translateX(-50%); 
+    height: auto; 
+    text-align: center;
+}
+
+
+
+ul {
     list-style-type: none;
-    margin: 0;
-    padding: 0;
+    flex-direction: column;
+    flex-wrap: wrap;
+    display: flex;
+   
+}
+ul li {
+flex: 1 0 25%;
 }

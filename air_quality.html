@@ -4,18 +4,34 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href ="./air_quality.css">
+    
     <script src="./air_quality.js" defer></script>
-    <!-- <link href="/fontawesome-free-6.6.0-web/js/all.js" rel="stylesheet" />
-    <link href="./fontawesome-free-6.6.0-web/css/all.css" rel="stylesheet" /> -->
+    <!-- Font Awesome 6 -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 
+    
     <title>Document</title>
 </head>
 <body>
+    <nav>
+        <ul>
+          
+        <li><a href="./air_quality.html"><i class="fa-solid fa-city"></i></i>
+            <span class = "nav-item">Search</span>
+        </a></li>      
+
+        <li><a href="./map.html"><i class="fa-solid fa-city"></i></i>
+            <span class = "nav-item">Map</span>
+        </a></li>  
+        </ul>
+    </nav>
     <h1 class = "heading"> See AirQuality for Other Location</h1>
     <div class = "search">
         <input type = "text" id = "state" name = "state" placeholder="Enter State" spellcheck="false">
         <input type = "text" id = "city" name = "city" placeholder="Enter City" spellcheck="false">
-        <button id="search_btn" >search</button>
+        <button  class = "search_btn" id="search_btn" ><i class="fa-solid fa-magnifying-glass"></i></button>
+
+
     </div>
 
 
