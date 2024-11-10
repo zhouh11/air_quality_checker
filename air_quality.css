@@ -9,7 +9,8 @@
 }
 
 
-.State{
+.State,
+.heading{
     text-align: center;
     font-size: 50px;
     color: rgb(29, 2, 104);
@@ -166,4 +167,36 @@ ul {
 }
 ul li {
 flex: 1 0 25%;
+}
+
+nav{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    height: 100%;
+    left: 0;
+    background: #e0eeffe0;
+    width: 110px;
+    overflow: hidden;
+    transition: width 0.2s linear;
+  
+}
+
+a{
+    position: relative;
+    color:navy;
+    font-size: 14px;
+    display: table;
+    width:300px ; 
+    padding: 20px;
+}
+
+.nav-item{
+    position: relative;
+    top:12px;
+    margin-left: 10px;
+}
+a:hover{
+    background: #eee;
+    height: 55px;
 }
