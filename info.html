@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href ="./air_quality.css">
+    <script src="./air_quality.js" defer></script>
+    <!-- <link href="/fontawesome-free-6.6.0-web/js/all.js" rel="stylesheet" />
+    <link href="./fontawesome-free-6.6.0-web/css/all.css" rel="stylesheet" /> -->
+
+    <title>Document</title>
+</head>
+<body>
+    <h1 class = "heading"> See AirQuality for Other Location</h1>
+    <div class = "search">
+        <input type = "text" id = "state" name = "state" placeholder="Enter State" spellcheck="false">
+        <input type = "text" id = "city" name = "city" placeholder="Enter City" spellcheck="false">
+        <button id="search_btn" >search</button>
+
+        <!-- <button id="search_btn"><i class="fa-solid fa-magnifying-glass"></i></button> -->
+    </div>
+
+        
+
+    <div class = "card">
+        <div class = "AirQuality">
+            <h2 class = "state" ></h2>
+            <h2 class = "city" ></h2>
+            <div class="details">
+                <div class = "col">
+            
+                    <div>
+                        <p id = "_City"></p>
+                    </div>
+                </div>
+
+                <div class = "col">
+            
+                    <div>
+                        <p id = "_State"> </p>
+                    </div>
+                </div>
+                
+                <div class = "col">
+            
+                    <div>
+                        <p id = "airQuality">airQuality: </p>
+                    </div>
+                </div>
+
+                <div class = "col">
+            
+                    <div>
+                        <p id = "mainPollutant"></p>
+                    </div>
+                </div> 
+               
+                
+            
+                
+            </div>
+        </div>
+    </div>
+
+
+</body>
+</html>

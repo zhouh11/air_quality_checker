@@ -1,0 +1,46 @@
+
+.search{
+    align-items: center;
+    
+}
+.search input{
+    /* border:0; */
+    outline:0;
+    background:ebfffc;
+    color:#555;
+    padding: 10px 25px;
+    height:30px;
+    border-radius: 30px;
+    flex:1;
+    margin-right : 16px;
+    font-size: 18px;
+ 
+}
+
+.card{
+    width:90%;
+    max-width: 470px;
+    background: linear-gradient(0deg, rgba(87,255,236,1) 0%, rgba(152,218,255,1) 100%);
+    color: navy;
+    margin: 100px auto 0;
+    border-radius: 20px;
+    padding: 40px 35px;
+    text-align: center;
+}
+
+.col{
+    display: flex;
+  
+    
+
+}
+
+#_City,
+#_State,
+#airQuality,
+#mainPollutant{
+    font-size: 23px;
+    margin-top: 6px;
+    text-align: center;
+
+}
